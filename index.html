@@ -11,7 +11,6 @@
         <p><input type="text" name="catName" placeholder="Введите кличку питомца" size="18" /></p>
         <p><input type="text" name="userName" placeholder="Введите ваше имя" size="18" /></p>
         <p><input type="text" name="userContact" placeholder="Введите ваш контакт" size="18" /></p>
-        <p>
             <label for="cat">Выберите породу котика:</label>
             <select id="cat" name="cat">
                 <option value="metis">Метис</option>
@@ -42,15 +41,9 @@
                 <textarea name="comment" id="comment" placeholder="Не более 200 символов" maxlength="200"></textarea>   
             </p>
             Если вы пришлёте фотографию котика, сегодня будет на один повод больше радости :3
-            <form enctype="multipart/form-data" method="post">
-                <p><input type="file" name="f"></p>
-        <p>
-            <button type="submit">Сохранить</button> 
-        </p>
+            <p><input type="file" id="file-uploader"></p>
+            <p><button type="submit">Сохранить</button></p>
     </form>
-Если вы пришлёте фотографию котика, сегодня будет на один повод больше радости :3
-<form enctype="multipart/form-data" method="post">
-<p><input type="file" name="f"></p>
-    <p><button type="submit">Сохранить</button></p>
+
 </body>
 </html>
