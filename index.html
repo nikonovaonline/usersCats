@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для владелиц котиков</title>
+</head>
+<body>
+    <form>
+        <p><input type="text" name="catName" placeholder="Введите кличку питомца" size="18" /></p>
+        <p><input type="text" name="userName" placeholder="Введите ваше имя" size="18" /></p>
+        <p><input type="text" name="userContact" placeholder="Введите ваш контакт" size="18" /></p>
+        <p>
+            <label for="cat">Выберите породу котика:</label>
+            <select id="cat" name="cat">
+                <option value="metis">Метис</option>
+                <option value="persian">Персидская</option>
+                <option value="maine coon">Мейн-кун</option>
+                <option value="siberian">Сибирская</option>
+                <option value="other">Другая</option>
+            </select>
+            <h3>Чем питается ваш котик?</h3>
+            <p>
+                <input type="checkbox" checked name="dry"/>Сухой корм
+            </p>
+            <p>
+                <input type="checkbox" name="wet"/>Влажный корм
+            </p>
+            <p>
+                <input type="checkbox" name="natural"/>Натуральный корм
+            </p>
+            <h3>Укажите пол вашего питомца</h3>
+            <p>
+                <input type="radio" value="man" checked name="gender"/>мужской
+            </p>
+            <p>
+                <input type="radio" value="woman" name="gender"/>женский
+            </p>
+            <p>
+                <label for="comment">Ваш комментарий:</label><br/>
+                <textarea name="comment" id="comment" placeholder="Не более 200 символов" maxlength="200"></textarea>   
+            </p>
+            Если вы пришлёте фотографию котика, сегодня будет на один повод больше радости :3
+            <form enctype="multipart/form-data" method="post" action="http://localhost:8080/postfile.php">
+                <p>
+                    <input type="file" name="file" />
+                </p>
+        <p>
+            <button type="submit">Сохранить</button> 
+        </p>
+    </form>
+</body>
+</html>
